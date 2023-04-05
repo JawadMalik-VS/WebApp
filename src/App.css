@@ -1,38 +1,112 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-color:#485d70; */
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar{
+  height: 100%;
+  width: 250px;
+  background-color: #2F4050;
+  position: fixed;
+
+}
+.sidebarList{
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebarList .row{
+
+  width: 100%;
+  height: 50px;
+  list-style-type:none ;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
   color: white;
+  justify-content: center;
+  align-items: center ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.row #icon{
+  flex: 30%;
+  display: grid;
+  place-items:center;
+}
+.sidebarList #active{
+  background-color: #293846;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.mainBlock {
+  width: calc(100vw - 200px);
+  left: 200px;
+  position: relative;
 }
+
+.sidebarList .row:hover{
+  cursor: pointer;
+  background-color: #293846;
+}
+.row #title{
+  flex: 70%;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+.box1 {
+  background-color: #000;
+  color: #fff;
+  opacity: .5;
+}
+
+.box2 {
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}
+  

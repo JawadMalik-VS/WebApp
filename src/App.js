@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Sidebar from "./component/Sidebar";
+
+import { AllRoutes } from "./routes";
+import PrivateRoute from "./routes/PrivateRoutes";
+import ProtectedRoute from "./routes/ProtectedRoutes";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar />
+      <BrowserRouter>
+        <Routes>
+          {AllRoutes?.map((item, index) => (
+            <Route
+              key={index}
+              path={item.path}
+              element={
+                item.isPrivate ? (
+                  <PrivateRoute>{item.page}</PrivateRoute>
+                ) : (
+                  <ProtectedRoute>{item.page}</ProtectedRoute>
+                )
+              }
+            ></Route>
+          ))}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

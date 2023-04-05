@@ -1,0 +1,652 @@
+@charset "UTF-8";
+
+/*
+|----------------------------------------------------------------------
+|       Import Files
+|----------------------------------------------------------------------
+*/
+html {
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: initial;
+}
+
+html.flow {
+  overflow: hidden !important;
+}
+
+html.flow body {
+  overflow: hidden !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 9.7222px;
+  }
+}
+
+@media (max-width: 1368px) {
+  html {
+    font-size: 9.5px;
+  }
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 9.44444px;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 8.88889px;
+  }
+}
+
+@media (max-width: 1208px) {
+  html {
+    font-size: 8.38889px;
+  }
+}
+
+@media (max-width: 1152px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 7.1111px;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  position: relative;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+
+input {
+  --tw-ring-shadow: 0 0 #000 !important;
+}
+
+.auth_box {
+  min-width: 65rem;
+  max-width: 65rem;
+}
+
+@media (max-width: 500px) {
+  .auth_box {
+    min-width: 50rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.auth-bg-image {
+  max-width: unset;
+  width: 100%;
+}
+
+.pincode-input-container .pincode-input-text {
+  padding: 0 !important;
+  margin: 0 10px !important;
+  text-align: center !important;
+  border: 1px solid !important;
+  background: transparent !important;
+  width: 7rem !important;
+  height: 7rem !important;
+  border: 1px solid #adadad !important;
+  border-radius: 5px !important;
+  font-size: 4rem !important;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .pincode-input-container .pincode-input-text {
+    margin: 0 2px !important;
+  }
+}
+
+.pincode-input-container .pincode-input-text:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.input-form-calendar {
+  text-align: center;
+  max-width: 15.9rem;
+  color: white;
+  font-size: 1.4rem;
+  height: 4.6rem;
+  padding: "2.7rem 0";
+  background-color: transparent;
+  border: 0.2rem solid white;
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+}
+
+.input-form-calendar::-moz-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.input-form-calendar:-ms-input-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.input-form-calendar::placeholder {
+  text-align: center;
+  color: white;
+}
+
+.input-call-calendar {
+  text-align: center;
+  max-width: 15.9rem;
+  color: white;
+  font-size: 1.4rem;
+  height: 3.6rem;
+  background-color: transparent;
+  border: 0.2rem solid white;
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+}
+
+.input-call-calendar::-moz-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.input-call-calendar:-ms-input-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.input-call-calendar::placeholder {
+  text-align: center;
+  color: white;
+}
+
+.video_slider::-webkit-slider-thumb {
+  width: 1.11rem;
+  height: 1.7rem;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.video_slider::-moz-range-thumb {
+  width: 1.11rem;
+  height: 1.7rem;
+  background-color: #fff;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.account_input .input_wrapper {
+  margin-bottom: 1rem;
+}
+
+.account_input input {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 2px;
+  border-color: #cacaca;
+  color: #333333;
+  border-radius: 1rem;
+  font-size: 3.2rem;
+  height: 7rem;
+  background-color: #f0f0f0;
+  padding: 0 2rem;
+}
+
+.account_input input:focus {
+  outline: none;
+}
+
+.account_input input::-moz-placeholder {
+  color: #cacaca;
+  line-height: 3.3rem;
+  background-color: #f0f0f0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 7rem;
+}
+
+.account_input input:-ms-input-placeholder {
+  color: #cacaca;
+  line-height: 3.3rem;
+  background-color: #f0f0f0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 7rem;
+}
+
+.account_input input::placeholder {
+  color: #cacaca;
+  line-height: 3.3rem;
+  background-color: #f0f0f0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 7rem;
+}
+
+.account_input label {
+  color: #333333;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.register_event_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.register_event_input label {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.register_event_input input {
+  color: #fff;
+  font-size: 2.6rem;
+  height: 7rem;
+  width: 100%;
+  background-color: #202f39;
+  border: 2px solid #888888;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.register_event_input input:focus {
+  outline: none;
+}
+
+.primary_button {
+  @apply h-24 text-4xl rounded-2xl text-white border-0 border-primary_blue bg-primary_blue;
+}
+
+.secondary_button {
+  @apply h-24 text-4xl rounded-2xl text-white border-2 border-primary_blue;
+}
+
+.schedule_call_input label {
+  display: block;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.schedule_call_input input {
+  color: #fff;
+  font-size: 2.25rem;
+  height: 6rem;
+  width: 100%;
+  background-color: #202f39;
+  border: solid 2px #fff;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.schedule_call_input input:focus {
+  outline: none;
+}
+
+.schedule_call_input input::-moz-placeholder {
+  color: #605f5f;
+}
+
+.schedule_call_input input:-ms-input-placeholder {
+  color: #605f5f;
+}
+
+.schedule_call_input input::placeholder {
+  color: #605f5f;
+}
+
+.schedule_call_input textarea {
+  color: #fff;
+  font-size: 2.25rem;
+  padding: 1.2rem 1.8rem;
+  width: 100%;
+  background-color: #202f39;
+  border: solid 2px #fff;
+  border-radius: 1rem;
+  text-align: start;
+}
+
+.schedule_call_input textarea:focus {
+  outline: none;
+}
+
+.schedule_call_input textarea::-moz-placeholder {
+  color: #605f5f;
+}
+
+.schedule_call_input textarea:-ms-input-placeholder {
+  color: #605f5f;
+}
+
+.schedule_call_input textarea::placeholder {
+  color: #605f5f;
+}
+
+.react-datepicker {
+  width: 100%;
+  font-family: "Roboto" !important;
+}
+
+.react-datepicker__day--disabled {
+  opacity: 0.3;
+}
+
+.react-datepicker__month-container {
+  min-width: 28rem;
+}
+
+.react-datepicker__time-container {
+  min-width: 17rem !important;
+}
+
+.react-datepicker__time-box {
+  width: 100% !important;
+}
+
+.react-datepicker__time-list-item {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #616161 !important;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: #e7e6e6 !important;
+  color: #2165a2 !important;
+}
+
+.react-datepicker__time-list-item--selected {
+  color: #fff !important;
+  background-color: #2165a2 !important;
+}
+
+.react-datepicker__time-list-item--keyboard-selected {
+  color: #fff !important;
+  background-color: #2165a2 !important;
+}
+
+.react-datepicker__header {
+  border-top-right-radius: 1.3rem !important;
+  border-top-left-radius: 1.3rem !important;
+}
+
+.react-datepicker__navigation {
+  top: 10px !important;
+}
+
+.react-datepicker__current-month {
+  font-size: 2.4rem !important;
+  color: #2165a2 !important;
+}
+
+.react-datepicker__day-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2165a2 !important;
+  width: 4.8rem !important;
+  height: 4.8rem !important;
+  padding: 1.5rem 1rem;
+}
+
+.react-datepicker__triangle::after {
+  left: -40px !important;
+}
+
+.react-datepicker__triangle::before {
+  left: -40px !important;
+}
+
+.react-datepicker__day {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #616161 !important;
+  width: 4.8rem !important;
+  height: 4.8rem !important;
+  padding: 1.5rem 1rem;
+}
+
+.react-datepicker__day:hover {
+  background-color: #e7e6e6 !important;
+  color: #2165a2 !important;
+}
+
+.react-datepicker__day--selected {
+  color: #fff !important;
+  background-color: #2165a2 !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  color: #fff !important;
+  background-color: #2165a2 !important;
+}
+
+.react-datepicker-time__header {
+  font-size: 2.4rem !important;
+  color: #2165a2 !important;
+}
+
+.error {
+  text-transform: capitalize;
+  color: red;
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+  margin-left: 1rem;
+}
+
+.form_dot {
+  position: relative;
+}
+
+.form_dot:last-child {
+  margin: 0;
+}
+
+.form_dot::before {
+  content: "";
+  width: 8px;
+  min-width: 8px;
+  height: 8px;
+  background: #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  z-index: 28;
+  border-radius: 100%;
+}
+
+@media (min-width: 600px) {
+  .form_dot::before {
+    bottom: 0;
+    top: 36%;
+    left: -5px;
+  }
+}
+
+.form_dot.active::before {
+  background: #299aff;
+}
+
+.tabs_blk::-webkit-scrollbar {
+  display: none;
+}
+
+#swot_tabs li::before {
+  content: "•";
+  color: #299aff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.grey_image_filter {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(0%) saturate(32%) hue-rotate(155deg) brightness(107%) contrast(98%);
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox__indicator {
+  height: 3rem;
+  width: 3rem;
+  background: white;
+  border: 0.2rem solid #2165a2;
+  border-radius: 50%;
+  transition: 125ms ease-out;
+}
+
+.checkbox__indicator:disabled {
+  border: 0.2rem solid #2165a2;
+}
+
+.checkbox__indicator:after {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  top: 1.5rem;
+  width: 0.7rem;
+  height: 1.3rem;
+  transform: scaleX(-1) rotate(135deg);
+  transform-origin: left top;
+  border-right: 0.3rem solid white;
+  border-top: 3rem solid white;
+  display: none;
+}
+
+.checkbox input:checked~.checkbox__indicator {
+  background: #2165a2;
+}
+
+.checkbox input:disabled ~ .checkbox__indicator {
+  background: #2165a2;
+  border: 0.2rem solid #2165a2;
+}
+
+.checkbox input:checked~.checkbox__indicator:after {
+  -webkit-animation: check 125ms;
+  animation: check 125ms;
+  border-top: 0.3rem solid white;
+  border-right: 0.3rem solid white;
+  display: block;
+}
+
+.rbc-header {
+  margin-top: 1rem !important;
+  border-bottom: none !important;
+  font-size: 2.4rem !important;
+  color: #2165a2 !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+}
+
+.rbc-button-link {
+  display: block !important;
+  margin: 0 auto !important;
+  margin-top: 1rem !important;
+  text-align: center !important;
+  color: #828282 !important;
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+}
+
+.rbc-today {
+  background-color: transparent !important;
+}
+
+.rbc-current .rbc-button-link {
+  width: 3.8rem !important;
+  min-width: 3.8rem !important;
+  height: 3.8rem !important;
+  overflow: hidden !important;
+  background-color: #2165a2 !important;
+  border-radius: 50% !important;
+  color: white !important;
+}
+
+.rbc-event {
+  background-color: #2165a2 !important;
+  /* width: 16.2rem !important;
+  height: 4.5rem !important; */
+  margin: 0 auto !important;
+  margin-top: 0.6rem !important;
+  padding-left: 4.5rem !important;
+  position: relative;
+}
+
+.rbc-event::before {
+  content: "";
+  background-image: url("./assets/icons/CallIcon.svg");
+  background-repeat: no-repeat;
+  background-size: 3rem 3rem;
+  background-position: left center;
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+}
+
+.rbc-event-content {
+  text-align: center !important;
+  font-size: 1.8rem !important;
+  color: white;
+  font-weight: 500 !important;
+}
+
+/*# sourceMappingURL=App.css.map */
